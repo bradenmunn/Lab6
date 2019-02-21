@@ -7,14 +7,17 @@ public class Todo {/*
 	Tasks:
 	1. Complete the Shape class compareTo()
 	2. Complete the Circle.java class methods (very short)
+	3. Complete Polygon.java class (one method)
 
 	Estimated Time (minutes):
 	1. 10
 	2. 8
+	3. 5
 
 	Actual Time (minutes):
 	1. 8
 	2. 6
+	3. 5
 
 	*/
 
