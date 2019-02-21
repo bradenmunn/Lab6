@@ -33,5 +33,12 @@ public abstract class Polygon extends Shape
 	public double getPerimeter()
     {
     	// TODO: complete this...
+    	double total = 0.0;
+    	for(Double side: sideLengths)
+    	{
+    		total += side;
+    	}
+    	
+    	return total;
     }
 }

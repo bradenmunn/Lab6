@@ -19,9 +19,7 @@ public class Circle extends Ellipse
 	 */
 	public Circle(String id, double radius)
 	{
-		// Note: radius * 2 computes the diameter, which is equal to the major/minor axis length
-		super(id, radius * 2, radius * 2);
-		
+		super(id, radius, radius);	
 	}
 
 	/**
@@ -42,8 +40,7 @@ public class Circle extends Ellipse
 	@Override
 	public double getPerimeter()
 	{
-		// TODO: complete this...
-		return 0.0;
+		return 2 * Math.PI * super.getMajorAxis();
 	}
 
 	/**
@@ -54,7 +51,6 @@ public class Circle extends Ellipse
 	@Override
 	public String getShapeType()
 	{
-		// TODO: complete this...
-		return "";
+		return "Circle";
 	}
 }

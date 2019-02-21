@@ -132,7 +132,7 @@ public abstract class Shape implements Comparable<Shape>
 	 * a toString, so the toString of Shape is used. getShapeType() is overriden and implemented in Square,
 	 * so the Shape toString() uses the getShapeType() as defined in Square, which should return the
 	 * String "Square".
-	 *
+	 *	
 	 * @return A String describing the Shape. The returned string is of the format:
 	 * "<<shapetype>>\t ID = <<id>>\t area = <<area rounded to 3 decimals>>\t perimeter = <<perimeter rounded to 3 decimals>>"
 	 * Where <<x>> should be replaced with the value of x described inside the angle brackets.
