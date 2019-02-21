@@ -19,7 +19,9 @@ public class Circle extends Ellipse
 	 */
 	public Circle(String id, double radius)
 	{
-		// TODO: complete this...
+		// Note: radius * 2 computes the diameter, which is equal to the major/minor axis length
+		super(id, radius * 2, radius * 2);
+		
 	}
 
 	/**
