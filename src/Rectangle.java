@@ -8,6 +8,8 @@ public class Rectangle extends Polygon
 		super(id);
 		this.height = height;
 		this.width = width;
+		
+		// Add to the list of sideLengths for calculating perimeter
 		sideLengths.add(height);
 		sideLengths.add(width);
 	}
