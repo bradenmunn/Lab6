@@ -19,6 +19,8 @@ Tasks:
 12. Finish ShapePerimeterComparator class
 13. Implement ShapeSorterTest for default sorting
 14. Implement ShapeSorterTest for area sorting
+15. Implement ShapeSorterTest for perimeter sorting
+16. Implement ShapeSorterTest for toString test
 
 Estimated Time (minutes):
 1. 20
@@ -35,6 +37,8 @@ Estimated Time (minutes):
 12. 5
 13. 7
 14. 5
+15. 5
+16. 10
 
 Actual Time (minutes):
 1. 20
@@ -50,5 +54,8 @@ Actual Time (minutes):
 11. 10
 12. 5
 13. 7
+14. 5
+15. 5
+16. 8
 
 */}
