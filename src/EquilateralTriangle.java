@@ -24,6 +24,10 @@ public class EquilateralTriangle extends Polygon
 		// TODO: complete this...
 		super(id);
 		this.sideLength = sideLength;
+		
+		//Adds to the list for calculating perimeter
+		sideLengths.add(sideLength);
+		sideLengths.add(sideLength);
 		sideLengths.add(sideLength);
 		
 	}

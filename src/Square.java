@@ -8,7 +8,7 @@ public class Square extends Rectangle
 		super(id, size, size);
 		this.sideLength = size;
 		
-		sideLengths.add(size);
+		//Note: Side lengths added to list through super constructor using the Rectangle constructor
 	}
 	
 	public String getShapeType()
