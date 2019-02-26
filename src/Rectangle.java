@@ -11,6 +11,8 @@ public class Rectangle extends Polygon
 		
 		// Add to the list of sideLengths for calculating perimeter
 		sideLengths.add(height);
+		sideLengths.add(height);
+		sideLengths.add(width);
 		sideLengths.add(width);
 	}
 	

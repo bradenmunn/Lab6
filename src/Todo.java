@@ -14,6 +14,11 @@ Tasks:
 7. Finish the Trapezoid class
 8. Finish tests for Rectangle, Triangle, and Trapezoid
 9. Implement Circle test and ShapeToString test
+10. Finish ShapeSorter class
+11. Finish ShapeAreaComparator class
+12. Finish ShapePerimeterComparator class
+13. Implement ShapeSorterTest for default sorting
+14. Implement ShapeSorterTest for area sorting
 
 Estimated Time (minutes):
 1. 20
@@ -25,6 +30,11 @@ Estimated Time (minutes):
 7. 7
 8. 20
 9. 15
+10. 25
+11. 10
+12. 5
+13. 7
+14. 5
 
 Actual Time (minutes):
 1. 20
@@ -35,5 +45,10 @@ Actual Time (minutes):
 6. 10
 7. 7
 8. 15
+9. 15
+10. 10
+11. 10
+12. 5
+13. 7
 
 */}
