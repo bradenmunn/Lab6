@@ -70,6 +70,26 @@ public class ShapeSorterTest
 	public void SortShapesAreaTest()
 	{
 		// TODO: complete this...
+		ShapeSorter sorter = new ShapeSorter();
+
+		Shape a = new Rectangle("test", 4, 6); // Area = 24.0, Perimeter = 20.0
+		Shape b = new EquilateralTriangle("test2", 4); // Area = 6.9282, Perimeter = 12.0
+		Shape c = new Rectangle("test3", 2, 12); // Area = 24.0, Perimeter = 28.0
+		Shape d = new Circle("test4", 1.5); // Area = 7.0686, Perimeter = 9.4248
+		
+		sorter.addShape(a);
+		sorter.addShape(b);
+		sorter.addShape(c);
+		sorter.addShape(d);
+		
+		ShapeAreaComparator sc = new ShapeAreaComparator();
+		sorter.sortShapes(sc);
+		
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(0), b);
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(1), d);
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(2), a);
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(3), c);
+		
 	}
 
 	/**
@@ -79,6 +99,25 @@ public class ShapeSorterTest
 	public void SortShapesPerimeterTest()
 	{
 		// TODO: complete this...
+		ShapeSorter sorter = new ShapeSorter();
+
+		Shape a = new Rectangle("test", 4, 6); // Area = 24.0, Perimeter = 20.0
+		Shape b = new EquilateralTriangle("test2", 4); // Area = 6.9282, Perimeter = 12.0
+		Shape c = new Rectangle("test3", 2, 12); // Area = 24.0, Perimeter = 28.0
+		Shape d = new Circle("test4", 1.5); // Area = 7.0686, Perimeter = 9.4248
+		
+		sorter.addShape(a);
+		sorter.addShape(b);
+		sorter.addShape(c);
+		sorter.addShape(d);
+		
+		ShapePerimeterComparator sc = new ShapePerimeterComparator();
+		sorter.sortShapes(sc);
+		
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(0), d);
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(1), b);
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(2), a);
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(3), c);
 	}
 
 	/**
@@ -88,5 +127,21 @@ public class ShapeSorterTest
 	public void ToStringTest()
 	{
 		// TODO: complete this...
+		ShapeSorter sorter = new ShapeSorter();
+		
+		Shape sqr = new Square("Square1", 3.0);
+		Shape rec = new Rectangle("Rectangle1", 3.0, 4.0);
+		Shape circ = new Circle("Circle1", 2.0);
+		
+		sorter.addShape(sqr);
+		sorter.addShape(rec);
+		sorter.addShape(circ);
+		
+		Assert.assertEquals("Square\t ID = Square1\t area = 9.000\t perimeter = 12.000"
+				+ "Rectangle\t ID = Rectangle1\t area = 12.000\t perimeter = 14.000"
+				+ "Circle\t ID = Circle1\t area = 12.566\t perimeter = 12.566", sorter.toString());
+		
+		
+		
 	}
 }
