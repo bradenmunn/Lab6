@@ -69,7 +69,6 @@ public class ShapeSorterTest
 	@Test
 	public void SortShapesAreaTest()
 	{
-		// TODO: complete this...
 		ShapeSorter sorter = new ShapeSorter();
 
 		Shape a = new Rectangle("test", 4, 6); // Area = 24.0, Perimeter = 20.0
@@ -98,7 +97,6 @@ public class ShapeSorterTest
 	@Test
 	public void SortShapesPerimeterTest()
 	{
-		// TODO: complete this...
 		ShapeSorter sorter = new ShapeSorter();
 
 		Shape a = new Rectangle("test", 4, 6); // Area = 24.0, Perimeter = 20.0
@@ -126,7 +124,6 @@ public class ShapeSorterTest
 	@Test
 	public void ToStringTest()
 	{
-		// TODO: complete this...
 		ShapeSorter sorter = new ShapeSorter();
 		
 		Shape sqr = new Square("Square1", 3.0);

@@ -154,7 +154,6 @@ public class ShapeTest
 	@Test
 	public void ComparePerimeterTest()
 	{
-		// TODO: complete this...
 		// Test equals
 		Shape rect = new Rectangle("R1", 3.0,3.0);
 		Shape sqr = new Square("S1", 3.0);
@@ -181,6 +180,19 @@ public class ShapeTest
 	@Test
     public void NaturalCompareTest()
     {
-		// TODO: complete this...
+		// Test equal area AND perimeter
+		Shape rect = new Rectangle("R1", 3.0,3.0);
+		Shape sqr = new Square("S1", 3.0);
+		Assert.assertEquals("compareTo should find shapes equal.", 0, rect.compareTo(sqr));
+
+		// Test equal area, different perimeter:
+        Shape rect2 = new Rectangle("R2", 4.0, 6.0);
+        Shape rect3 = new Rectangle("R3", 2.0, 12.0);
+        Assert.assertEquals("compareTo gave incorrect ordering.", -1, rect2.compareTo(rect3));
+        Assert.assertEquals("compareTo gave incorrect ordering.", 1, rect3.compareTo(rect2));
+
+        // Test unequal perimeter and area:
+        Assert.assertEquals("ShapePerimeterComparator gave incorrect ordering.", -1, sqr.compareTo(rect2));
+        Assert.assertEquals("ShapePerimeterComparator gave incorrect ordering.", 1, rect2.compareTo(sqr));
     }
 }
