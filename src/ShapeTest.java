@@ -46,7 +46,6 @@ public class ShapeTest
 	@Test
 	public void TriangleTest()
 	{
-		// TODO: complete this...
 		EquilateralTriangle triangle = new EquilateralTriangle("Triangle1", 3.0);
 		Assert.assertEquals("Triangle area incorrect.", 3.8971143, triangle.getArea(), 0.0001);
 		Assert.assertEquals("Triangle perimeter incorrect.", 9.0, triangle.getPerimeter(), 0.0001);
@@ -60,7 +59,11 @@ public class ShapeTest
 	@Test
 	public void TrapezoidTest()
 	{
-		// TODO: complete this...
+		Trapezoid trpzd = new Trapezoid("Trapezoid1", 2.0, 2.0, 3.0, 4.0);
+		Assert.assertEquals("Trapezoid area incorrect.", 6.15234375, trpzd.getArea(), 0.0001);
+		Assert.assertEquals("Trapezoid perimeter incorrect.", 11.0, trpzd.getPerimeter(), 0.0001);
+		Assert.assertEquals("Trapezoid type incorrect.", "Trapezoid", trpzd.getShapeType());
+		Assert.assertEquals("Shape ID incorrect.", "Trapezoid1", trpzd.getId());
 	}
 
 	/**
@@ -93,6 +96,11 @@ public class ShapeTest
 	public void CircleTest()
 	{
 		// TODO: complete this...
+		Circle c1 = new Circle("Circle1", 4.0);
+		Assert.assertEquals("Circle area incorrect.", Math.PI*4.0*4.0, c1.getArea(), 0.0001);
+		Assert.assertEquals("Triangle perimeter incorrect.", 2*Math.PI*4.0, c1.getPerimeter(), 0.0001);
+		Assert.assertEquals("Triangle type incorrect.", "Circle", c1.getShapeType());
+		Assert.assertEquals("Shape ID incorrect.", "Circle1", c1.getId());
 	}
 
 	/**

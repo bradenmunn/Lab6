@@ -11,8 +11,9 @@ Tasks:
 4. Implement the Rectangle class
 5. Implement the Circle class
 6. Finish the EquilateralTriangle class
-7. 
-8. 
+7. Finish the Trapezoid class
+8. Finish tests for Rectangle, Triangle, and Trapezoid
+9. Implement Circle test and ShapeToString test
 
 Estimated Time (minutes):
 1. 20
@@ -21,8 +22,9 @@ Estimated Time (minutes):
 4. 15
 5. 10
 6. 10
-7. 
-8. 
+7. 7
+8. 20
+9. 15
 
 Actual Time (minutes):
 1. 20
@@ -30,8 +32,8 @@ Actual Time (minutes):
 3. 5
 4. 15
 5. 10
-6. 
-7. 
-8. 
+6. 10
+7. 7
+8. 15
 
 */}
